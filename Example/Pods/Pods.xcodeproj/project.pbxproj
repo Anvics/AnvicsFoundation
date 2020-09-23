@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11A44B3C573291E02D828AC27D911DB9 /* AnvicsFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 344CBF7E2D3F738DFA6207760FECFB26 /* AnvicsFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		174127FD9D92439625808985F0FC63C5 /* Pods-AnvicsFoundation_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D33E8A814F0D4F9E70ED72EF228FE636 /* Pods-AnvicsFoundation_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BF31681381D9E6A4B924802D0187A0D /* Pods-AnvicsFoundation_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDEB2C1A3B1EBC2E0837528FC0CE31 /* Pods-AnvicsFoundation_Tests-dummy.m */; };
+		5642FDC438B060333B5E8C93EB3A8104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7AD2E559D20820B24C5F9B6A3CAE3F53 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42DB9B647EDFD6F04CF8FEA94686708 /* ReplaceMe.swift */; };
+		9C05FD5A7E3EE89379E33959CCF708C6 /* AnvicsFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1CC472DC6A7A960FE25DE1956B3EA9F /* AnvicsFoundation-dummy.m */; };
+		A5415DCBE594D2FE059F2094F6873858 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52BD19D55B6BBCBFB868829001FA7F1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 023FD93D22014BCB2E60CD23B9279D04;
+			remoteInfo = AnvicsFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0137DA60930A94AF92CCB2229A177501 /* Pods-AnvicsFoundation_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnvicsFoundation_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		05DF8BF176721C0F0E0D77A661A2FA09 /* Pods-AnvicsFoundation_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnvicsFoundation_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09BD5DEA51D3694870418571AF73D54C /* Pods-AnvicsFoundation_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnvicsFoundation_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		25A8198DAD6C9A20E6CC82A962FB7CEF /* AnvicsFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnvicsFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		344CBF7E2D3F738DFA6207760FECFB26 /* AnvicsFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnvicsFoundation-umbrella.h"; sourceTree = "<group>"; };
+		40B01A4DAA119F8465174342F36F3D73 /* AnvicsFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnvicsFoundation.release.xcconfig; sourceTree = "<group>"; };
+		44A961C4EA286E6D89DCC7A72F77C154 /* Pods-AnvicsFoundation_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnvicsFoundation_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		46943CAB435888B25C8A464E28771C13 /* Pods-AnvicsFoundation_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnvicsFoundation_Tests.modulemap"; sourceTree = "<group>"; };
+		4ADDEB2C1A3B1EBC2E0837528FC0CE31 /* Pods-AnvicsFoundation_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnvicsFoundation_Tests-dummy.m"; sourceTree = "<group>"; };
+		5B11CD99F44D6EC2BD22AE5CE53D18D2 /* Pods-AnvicsFoundation_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnvicsFoundation_Tests-Info.plist"; sourceTree = "<group>"; };
+		715595A1DCE49AB72BA560CB7BE745BC /* AnvicsFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnvicsFoundation.modulemap; sourceTree = "<group>"; };
+		7D8660A805DAA243C4A7A1472A70868F /* AnvicsFoundation.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AnvicsFoundation.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9084DA421EC4B61CAA4BFE395AEB6CF5 /* AnvicsFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnvicsFoundation-prefix.pch"; sourceTree = "<group>"; };
+		9BF95AF623E9EA8BF6049FCD8A847D09 /* Pods_AnvicsFoundation_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AnvicsFoundation_Tests.framework; path = "Pods-AnvicsFoundation_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1CC472DC6A7A960FE25DE1956B3EA9F /* AnvicsFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnvicsFoundation-dummy.m"; sourceTree = "<group>"; };
+		C42DB9B647EDFD6F04CF8FEA94686708 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AnvicsFoundation/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		C52CA4D6731E3902CDA8D4710955821E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CAAA773BD23BD78CEA6D2A1E537F2F22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D33E8A814F0D4F9E70ED72EF228FE636 /* Pods-AnvicsFoundation_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnvicsFoundation_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E22158D46371B68FD944C3FEFE8CD447 /* Pods-AnvicsFoundation_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnvicsFoundation_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC4EEE8A40D3BDC25929BB4CC5B399EE /* AnvicsFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnvicsFoundation.framework; path = AnvicsFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1F27D4DBDE8DB13E4D68216ECC24F0 /* AnvicsFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AnvicsFoundation-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0576F88026A1DB5394E4F89D9E206167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5415DCBE594D2FE059F2094F6873858 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8A0CAA3147750A5F958BA63F6AA7441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5642FDC438B060333B5E8C93EB3A8104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D8A4394C29E88DEBB65123898AA0B6C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E4467578856BE3C7F6D31183D58BBF3 /* AnvicsFoundation */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1E04E9DCD5E92F7B38A54D4347A1680C /* Pods-AnvicsFoundation_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				46943CAB435888B25C8A464E28771C13 /* Pods-AnvicsFoundation_Tests.modulemap */,
+				05DF8BF176721C0F0E0D77A661A2FA09 /* Pods-AnvicsFoundation_Tests-acknowledgements.markdown */,
+				E22158D46371B68FD944C3FEFE8CD447 /* Pods-AnvicsFoundation_Tests-acknowledgements.plist */,
+				4ADDEB2C1A3B1EBC2E0837528FC0CE31 /* Pods-AnvicsFoundation_Tests-dummy.m */,
+				0137DA60930A94AF92CCB2229A177501 /* Pods-AnvicsFoundation_Tests-frameworks.sh */,
+				5B11CD99F44D6EC2BD22AE5CE53D18D2 /* Pods-AnvicsFoundation_Tests-Info.plist */,
+				D33E8A814F0D4F9E70ED72EF228FE636 /* Pods-AnvicsFoundation_Tests-umbrella.h */,
+				44A961C4EA286E6D89DCC7A72F77C154 /* Pods-AnvicsFoundation_Tests.debug.xcconfig */,
+				09BD5DEA51D3694870418571AF73D54C /* Pods-AnvicsFoundation_Tests.release.xcconfig */,
+			);
+			name = "Pods-AnvicsFoundation_Tests";
+			path = "Target Support Files/Pods-AnvicsFoundation_Tests";
+			sourceTree = "<group>";
+		};
+		2E4467578856BE3C7F6D31183D58BBF3 /* AnvicsFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				C42DB9B647EDFD6F04CF8FEA94686708 /* ReplaceMe.swift */,
+				A0BEDC5125B4638505ADBD12AE5B88A3 /* Pod */,
+				5ECC28AB76F8A106857EF52CD68D4D7F /* Support Files */,
+			);
+			name = AnvicsFoundation;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5ECC28AB76F8A106857EF52CD68D4D7F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				715595A1DCE49AB72BA560CB7BE745BC /* AnvicsFoundation.modulemap */,
+				C1CC472DC6A7A960FE25DE1956B3EA9F /* AnvicsFoundation-dummy.m */,
+				EE1F27D4DBDE8DB13E4D68216ECC24F0 /* AnvicsFoundation-Info.plist */,
+				9084DA421EC4B61CAA4BFE395AEB6CF5 /* AnvicsFoundation-prefix.pch */,
+				344CBF7E2D3F738DFA6207760FECFB26 /* AnvicsFoundation-umbrella.h */,
+				25A8198DAD6C9A20E6CC82A962FB7CEF /* AnvicsFoundation.debug.xcconfig */,
+				40B01A4DAA119F8465174342F36F3D73 /* AnvicsFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AnvicsFoundation";
+			sourceTree = "<group>";
+		};
+		971EA27B3399D7AB6042977F80D8DB52 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E04E9DCD5E92F7B38A54D4347A1680C /* Pods-AnvicsFoundation_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A0BEDC5125B4638505ADBD12AE5B88A3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7D8660A805DAA243C4A7A1472A70868F /* AnvicsFoundation.podspec */,
+				C52CA4D6731E3902CDA8D4710955821E /* LICENSE */,
+				CAAA773BD23BD78CEA6D2A1E537F2F22 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				0D8A4394C29E88DEBB65123898AA0B6C /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E27AA0EAC9AC6FFB8EBF60AD1F9EEE11 /* Products */,
+				971EA27B3399D7AB6042977F80D8DB52 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E27AA0EAC9AC6FFB8EBF60AD1F9EEE11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4EEE8A40D3BDC25929BB4CC5B399EE /* AnvicsFoundation.framework */,
+				9BF95AF623E9EA8BF6049FCD8A847D09 /* Pods_AnvicsFoundation_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E728619CE3B71EBADCD868BB044FBAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174127FD9D92439625808985F0FC63C5 /* Pods-AnvicsFoundation_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C28D2AA0BF2EF3A8367DAD837938E6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11A44B3C573291E02D828AC27D911DB9 /* AnvicsFoundation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		023FD93D22014BCB2E60CD23B9279D04 /* AnvicsFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 666FB9E1B3EBA10FE2E94B7A1439B787 /* Build configuration list for PBXNativeTarget "AnvicsFoundation" */;
+			buildPhases = (
+				85C28D2AA0BF2EF3A8367DAD837938E6 /* Headers */,
+				716E97E80D480A85CA5667CB2142EFDE /* Sources */,
+				0576F88026A1DB5394E4F89D9E206167 /* Frameworks */,
+				89E7B275E1DB085D995FDAEBFED3E5B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnvicsFoundation;
+			productName = AnvicsFoundation;
+			productReference = EC4EEE8A40D3BDC25929BB4CC5B399EE /* AnvicsFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA7C08B617B4BC6E1C586304225B00CE /* Pods-AnvicsFoundation_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB1DCAA118F03594D4AAFAAAFB77BDE /* Build configuration list for PBXNativeTarget "Pods-AnvicsFoundation_Tests" */;
+			buildPhases = (
+				4E728619CE3B71EBADCD868BB044FBAF /* Headers */,
+				75E1EAFB0B02EB327A91F941A65084CF /* Sources */,
+				E8A0CAA3147750A5F958BA63F6AA7441 /* Frameworks */,
+				635D66C5334C2F0F22A4265B9A97D83E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				137D1515B5952323FDE04A0DB4D1A6E6 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnvicsFoundation_Tests";
+			productName = "Pods-AnvicsFoundation_Tests";
+			productReference = 9BF95AF623E9EA8BF6049FCD8A847D09 /* Pods_AnvicsFoundation_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E27AA0EAC9AC6FFB8EBF60AD1F9EEE11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				023FD93D22014BCB2E60CD23B9279D04 /* AnvicsFoundation */,
+				FA7C08B617B4BC6E1C586304225B00CE /* Pods-AnvicsFoundation_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		635D66C5334C2F0F22A4265B9A97D83E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89E7B275E1DB085D995FDAEBFED3E5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		716E97E80D480A85CA5667CB2142EFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C05FD5A7E3EE89379E33959CCF708C6 /* AnvicsFoundation-dummy.m in Sources */,
+				7AD2E559D20820B24C5F9B6A3CAE3F53 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E1EAFB0B02EB327A91F941A65084CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF31681381D9E6A4B924802D0187A0D /* Pods-AnvicsFoundation_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		137D1515B5952323FDE04A0DB4D1A6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnvicsFoundation;
+			target = 023FD93D22014BCB2E60CD23B9279D04 /* AnvicsFoundation */;
+			targetProxy = 52BD19D55B6BBCBFB868829001FA7F1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DB8765F0711CA423DC46FBB70386F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BD5DEA51D3694870418571AF73D54C /* Pods-AnvicsFoundation_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnvicsFoundation_Tests/Pods-AnvicsFoundation_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnvicsFoundation_Tests/Pods-AnvicsFoundation_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71D9988E01BA7C4FF26F3AF7893BD4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A8198DAD6C9A20E6CC82A962FB7CEF /* AnvicsFoundation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnvicsFoundation/AnvicsFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnvicsFoundation/AnvicsFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnvicsFoundation/AnvicsFoundation.modulemap";
+				PRODUCT_MODULE_NAME = AnvicsFoundation;
+				PRODUCT_NAME = AnvicsFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		820AC7A176F451E78552C91282C73DFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B01A4DAA119F8465174342F36F3D73 /* AnvicsFoundation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AnvicsFoundation/AnvicsFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AnvicsFoundation/AnvicsFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AnvicsFoundation/AnvicsFoundation.modulemap";
+				PRODUCT_MODULE_NAME = AnvicsFoundation;
+				PRODUCT_NAME = AnvicsFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C195FC98F881A6DBB0641C5986251167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A961C4EA286E6D89DCC7A72F77C154 /* Pods-AnvicsFoundation_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnvicsFoundation_Tests/Pods-AnvicsFoundation_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnvicsFoundation_Tests/Pods-AnvicsFoundation_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		666FB9E1B3EBA10FE2E94B7A1439B787 /* Build configuration list for PBXNativeTarget "AnvicsFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D9988E01BA7C4FF26F3AF7893BD4BF /* Debug */,
+				820AC7A176F451E78552C91282C73DFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB1DCAA118F03594D4AAFAAAFB77BDE /* Build configuration list for PBXNativeTarget "Pods-AnvicsFoundation_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C195FC98F881A6DBB0641C5986251167 /* Debug */,
+				3DB8765F0711CA423DC46FBB70386F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

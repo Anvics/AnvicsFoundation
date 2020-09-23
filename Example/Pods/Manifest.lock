@@ -1,0 +1,16 @@
+PODS:
+  - AnvicsFoundation (0.1.0)
+
+DEPENDENCIES:
+  - AnvicsFoundation (from `../`)
+
+EXTERNAL SOURCES:
+  AnvicsFoundation:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AnvicsFoundation: 7d374f0aa654b93bc0462fa5b141ec63ff3794fc
+
+PODFILE CHECKSUM: bf45cb7450d0ce2d541aa70f7c9db7ade1681e11
+
+COCOAPODS: 1.9.3

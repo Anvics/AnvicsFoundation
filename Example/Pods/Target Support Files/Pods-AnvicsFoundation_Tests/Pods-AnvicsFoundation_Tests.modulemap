@@ -1,0 +1,6 @@
+framework module Pods_AnvicsFoundation_Tests {
+  umbrella header "Pods-AnvicsFoundation_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
