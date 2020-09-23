@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIImageView {
-    override open func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         tintColorDidChange()
     }
