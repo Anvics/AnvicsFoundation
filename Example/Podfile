@@ -1,0 +1,6 @@
+use_frameworks!
+target 'AnvicsFoundation_Tests' do
+  pod 'AnvicsFoundation', :path => '../'
+  
+  
+end
