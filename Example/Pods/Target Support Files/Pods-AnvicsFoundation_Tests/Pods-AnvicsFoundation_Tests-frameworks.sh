@@ -197,10 +197,30 @@ if [ -r "${ARTIFACT_LIST_FILE}" ]; then
 fi
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Animatics/Animatics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AnimaticsBond/AnimaticsBond.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AnvicsFoundation/AnvicsFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bond/Bond.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Differ/Differ.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FastArchitecture/FastArchitecture.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Magics/Magics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Animatics/Animatics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AnimaticsBond/AnimaticsBond.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AnvicsFoundation/AnvicsFoundation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bond/Bond.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Differ/Differ.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FastArchitecture/FastArchitecture.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Magics/Magics.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

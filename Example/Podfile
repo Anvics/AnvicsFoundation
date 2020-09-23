@@ -1,6 +1,18 @@
 use_frameworks!
+
+platform :ios, '10.0'
+
 target 'AnvicsFoundation_Tests' do
   pod 'AnvicsFoundation', :path => '../'
   
+  pod 'Bond'
+  pod 'ReactiveKit'
+  pod 'SwifterSwift'
+  pod 'SVProgressHUD'
+
+  pod 'FastArchitecture'
+  pod 'Magics'
+  pod 'Animatics'
+  pod 'AnimaticsBond', '~> 1.1.0'
   
 end

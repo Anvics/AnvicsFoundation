@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AnvicsFoundation"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Animatics" "${PODS_CONFIGURATION_BUILD_DIR}/AnimaticsBond" "${PODS_CONFIGURATION_BUILD_DIR}/AnvicsFoundation" "${PODS_CONFIGURATION_BUILD_DIR}/Bond" "${PODS_CONFIGURATION_BUILD_DIR}/Differ" "${PODS_CONFIGURATION_BUILD_DIR}/FastArchitecture" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher" "${PODS_CONFIGURATION_BUILD_DIR}/Magics" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveKit" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SwifterSwift"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AnvicsFoundation/AnvicsFoundation.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Animatics/Animatics.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AnimaticsBond/AnimaticsBond.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AnvicsFoundation/AnvicsFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Bond/Bond.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Differ/Differ.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FastArchitecture/FastArchitecture.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Magics/Magics.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ReactiveKit/ReactiveKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwifterSwift/SwifterSwift.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "AnvicsFoundation"
+OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "Animatics" -framework "AnimaticsBond" -framework "AnvicsFoundation" -framework "Bond" -framework "CFNetwork" -framework "Differ" -framework "FastArchitecture" -framework "Foundation" -framework "Kingfisher" -framework "Magics" -framework "QuartzCore" -framework "ReactiveKit" -framework "SVProgressHUD" -framework "SwifterSwift" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

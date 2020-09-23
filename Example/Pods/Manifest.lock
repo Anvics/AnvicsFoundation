@@ -1,16 +1,96 @@
 PODS:
-  - AnvicsFoundation (0.1.0)
+  - Animatics (1.1.2)
+  - AnimaticsBond (1.1.2):
+    - Animatics
+    - Bond
+  - AnvicsFoundation (1.0.0):
+    - Animatics
+    - AnimaticsBond (~> 1.1.0)
+    - Bond
+    - FastArchitecture
+    - Magics
+    - SVProgressHUD
+    - SwifterSwift
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
+  - FastArchitecture (1.4.2):
+    - Bond
+    - Kingfisher
+  - Kingfisher (5.15.3):
+    - Kingfisher/Core (= 5.15.3)
+  - Kingfisher/Core (5.15.3)
+  - Magics (2.2.4)
+  - ReactiveKit (3.17.4)
+  - SVProgressHUD (2.2.5)
+  - SwifterSwift (5.2.0):
+    - SwifterSwift/AppKit (= 5.2.0)
+    - SwifterSwift/CoreAnimation (= 5.2.0)
+    - SwifterSwift/CoreGraphics (= 5.2.0)
+    - SwifterSwift/CoreLocation (= 5.2.0)
+    - SwifterSwift/Dispatch (= 5.2.0)
+    - SwifterSwift/Foundation (= 5.2.0)
+    - SwifterSwift/MapKit (= 5.2.0)
+    - SwifterSwift/SceneKit (= 5.2.0)
+    - SwifterSwift/SpriteKit (= 5.2.0)
+    - SwifterSwift/StoreKit (= 5.2.0)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwifterSwift/UIKit (= 5.2.0)
+  - SwifterSwift/AppKit (5.2.0)
+  - SwifterSwift/CoreAnimation (5.2.0)
+  - SwifterSwift/CoreGraphics (5.2.0)
+  - SwifterSwift/CoreLocation (5.2.0)
+  - SwifterSwift/Dispatch (5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/MapKit (5.2.0)
+  - SwifterSwift/SceneKit (5.2.0)
+  - SwifterSwift/SpriteKit (5.2.0)
+  - SwifterSwift/StoreKit (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwifterSwift/UIKit (5.2.0)
 
 DEPENDENCIES:
+  - Animatics
+  - AnimaticsBond (~> 1.1.0)
   - AnvicsFoundation (from `../`)
+  - Bond
+  - FastArchitecture
+  - Magics
+  - ReactiveKit
+  - SVProgressHUD
+  - SwifterSwift
+
+SPEC REPOS:
+  trunk:
+    - Animatics
+    - AnimaticsBond
+    - Bond
+    - Differ
+    - FastArchitecture
+    - Kingfisher
+    - Magics
+    - ReactiveKit
+    - SVProgressHUD
+    - SwifterSwift
 
 EXTERNAL SOURCES:
   AnvicsFoundation:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AnvicsFoundation: 7d374f0aa654b93bc0462fa5b141ec63ff3794fc
+  Animatics: c50a33999bbefc71addec9b9a4eb839dfae811d9
+  AnimaticsBond: cc0515edad9f3fcd30e398fc35b5d942c63001fa
+  AnvicsFoundation: f6252f50cb4d0a0e3bb45943bd7610a1b0c5927f
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  FastArchitecture: a1383b52307ecd96572b902ebf7d8fa115dc6f9a
+  Kingfisher: 2fef2f4d9e809285aff7f6195b5290520904f3fa
+  Magics: 5c61d580448dcf2b600d58adcee0fc9fbcaa4043
+  ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
 
-PODFILE CHECKSUM: bf45cb7450d0ce2d541aa70f7c9db7ade1681e11
+PODFILE CHECKSUM: 5ab7fde84ee4bc76203ac6d95a547210f51c6b0b
 
 COCOAPODS: 1.9.3

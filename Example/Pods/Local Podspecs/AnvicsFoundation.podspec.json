@@ -1,7 +1,7 @@
 {
   "name": "AnvicsFoundation",
-  "version": "0.1.0",
-  "summary": "A short description of AnvicsFoundation.",
+  "version": "1.0.0",
+  "summary": "Foundation for Anvics iOS dev",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/hip4yes/AnvicsFoundation",
   "license": {
@@ -13,10 +13,36 @@
   },
   "source": {
     "git": "https://github.com/hip4yes/AnvicsFoundation.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "AnvicsFoundation/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "AnvicsFoundation/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Bond": [
+
+    ],
+    "FastArchitecture": [
+
+    ],
+    "SwifterSwift": [
+
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "Magics": [
+
+    ],
+    "Animatics": [
+
+    ],
+    "AnimaticsBond": [
+      "~> 1.1.0"
+    ]
+  },
+  "swift_version": "5.0"
 }
