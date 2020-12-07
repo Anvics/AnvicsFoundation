@@ -12,10 +12,10 @@ import FastArchitecture
 import Bond
 import Animatics
 
-class ProgressComponentData: Equatable, FastDataCreatable{
+public class ProgressComponentData: Equatable, FastDataCreatable{
     let progress: CGFloat
     
-    init(progress: CGFloat) {
+    public init(progress: CGFloat) {
         self.progress = progress
     }
     
@@ -24,27 +24,35 @@ class ProgressComponentData: Equatable, FastDataCreatable{
     }
 }
 
-func ==(lhs: ProgressComponentData, rhs: ProgressComponentData) -> Bool{
+public func ==(lhs: ProgressComponentData, rhs: ProgressComponentData) -> Bool{
     return lhs.progress == rhs.progress
 }
 
-class ProgressComponent: UIView, FastComponent{
+public class ProgressComponent: UIView, FastComponent{
 //    public typealias Data = ProgressComponentData
-    static var emptyColor = UIColor.white
-    static var fillColor = UIColor.green
+    public static var emptyColor = UIColor.white
+    public static var fillColor = UIColor.green
     private let progressView = UIView()
     private let progressImage = UIImageView()
-    var event: SafeSignal<Void> { SafeSignal(just: ()) }
+    public var event: SafeSignal<Void> { SafeSignal(just: ()) }
 
-    var progress: CGFloat = 0{
+    public var progress: CGFloat = 0{
         didSet{ redraw() }
     }
     
-    @IBInspectable var icon: UIImage? = nil{
+    @IBInspectable public var emptyColor: UIColor? = nil{
+        didSet { updateProgressColors() }
+    }
+
+    @IBInspectable public var fillColor: UIColor? = nil{
+        didSet { updateProgressColors() }
+    }
+    
+    @IBInspectable public var icon: UIImage? = nil{
         didSet{ updateIcon() }
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         if progressView.superview == nil{ setup() }
         progressView.frame = bounds
@@ -52,10 +60,14 @@ class ProgressComponent: UIView, FastComponent{
     }
     
     private func setup(){
-        backgroundColor = ProgressComponent.emptyColor
-        progressView.backgroundColor = ProgressComponent.fillColor
         addSubview(progressView)
         addSubview(progressImage)
+        updateProgressColors()
+    }
+    
+    private func updateProgressColors(){
+        backgroundColor = emptyColor ?? ProgressComponent.emptyColor
+        progressView.backgroundColor = fillColor ?? ProgressComponent.fillColor
     }
     
     private func updateIcon(){
@@ -72,7 +84,7 @@ class ProgressComponent: UIView, FastComponent{
         progressImage.center = CGPoint(x: x, y: 3 + bounds.size.height / 2)
     }
 
-    func update(data: ProgressComponentData) {
+    public func update(data: ProgressComponentData) {
         progress = data.progress
     }
 }

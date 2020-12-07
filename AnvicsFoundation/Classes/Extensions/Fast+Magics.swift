@@ -46,7 +46,7 @@ public extension FastActor{
     }
 }
 
-extension FastActor where Action: FastDynamicAction{
+public extension FastActor where Action: FastDynamicAction{
     typealias DynamicCompletion = (inout Action.State, MagicsJSON, MagicsAPI) -> Void
     
     func interact(_ url: String, method: MagicsMethod = .get, json: FastJSON = [:], complete: @escaping DynamicCompletion) -> [FastMiddleware]{

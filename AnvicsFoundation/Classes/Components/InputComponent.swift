@@ -14,7 +14,7 @@ import Animatics
 import AnimaticsBond
 import SwifterSwift
 
-class InputComponentData: Equatable{
+public class InputComponentData: Equatable{
     let text: String?
     let placeholder: String?
     
@@ -38,29 +38,29 @@ class InputComponentData: Equatable{
     }
 }
 
-func ==(left: InputComponentData, right: InputComponentData) -> Bool{
+public func ==(left: InputComponentData, right: InputComponentData) -> Bool{
     return left.isEqual(to: right)
 }
 
 //MARK: - InputComponent
-class InputComponent: UIView{
-    static var textFont = UIFont.systemFont(ofSize: 16)
-    static var textColor = UIColor.black
+public class InputComponent: UIView{
+    public static var textFont = UIFont.systemFont(ofSize: 16)
+    public static var textColor = UIColor.black
     
-    static var placeholderFont = UIFont.systemFont(ofSize: 16)
-    static var placeholderColor = UIColor(hexString: "#757575")
-    static var errorColor = UIColor.red
-    static var placeholderScale: CGFloat = 0.75
-    static var underlineColor = UIColor.clear
-    static var inactiveUnderlineColor = UIColor.clear
-    static var underlineHeight: CGFloat = 1
-    static var borderColor = UIColor.white
-    static var borderWidth: CGFloat = 1
-    static var cornerRadius: CGFloat = 4
-    static var cornersOffset: CGFloat = 0
+    public static var placeholderFont = UIFont.systemFont(ofSize: 16)
+    public static var placeholderColor = UIColor(hexString: "#757575")
+    public static var errorColor = UIColor.red
+    public static var placeholderScale: CGFloat = 0.75
+    public static var underlineColor = UIColor.clear
+    public static var inactiveUnderlineColor = UIColor.clear
+    public static var underlineHeight: CGFloat = 1
+    public static var borderColor = UIColor.white
+    public static var borderWidth: CGFloat = 1
+    public static var cornerRadius: CGFloat = 4
+    public static var cornersOffset: CGFloat = 0
     
-    let textField = UITextField()
-    let isEnabled = Property(true)
+    public let textField = UITextField()
+    public let isEnabled = Property(true)
 //    fileprivate var skipTextTimes: Int { 2 }
     
     fileprivate let text = Property("")
@@ -70,20 +70,20 @@ class InputComponent: UIView{
     
     fileprivate let underlineView = UIView()
     
-    @IBInspectable var placeholder: String = "" {
+    @IBInspectable public var placeholder: String = "" {
         didSet { placeholderLabel.text = placeholder }
     }
-    @IBInspectable var showsClearButton: Bool = false {
+    @IBInspectable public var showsClearButton: Bool = false {
         didSet { textField.clearButtonMode = showsClearButton ? .always : .never }
     }
     
-    @IBInspectable var visibleOffset: CGFloat {
+    @IBInspectable public var visibleOffset: CGFloat {
         get { return textField.visibleOffset }
         set { textField.visibleOffset = newValue }
     }
     
-    @IBInspectable var defaultIsEmpty: Bool = true
-    @IBInspectable var hasToolbar: Bool = false{
+    @IBInspectable public var defaultIsEmpty: Bool = true
+    @IBInspectable public var hasToolbar: Bool = false{
         didSet { if hasToolbar { addToolbar() } }
     }
     
@@ -96,7 +96,7 @@ class InputComponent: UIView{
         }
     }
     
-    func setInitial(text: String?){
+    public func setInitial(text: String?){
         guard let text = text else { return }
         self.text.value = text
         textField.text = text
@@ -104,12 +104,12 @@ class InputComponent: UIView{
     }
     
     @discardableResult
-    override func resignFirstResponder() -> Bool {
+    public override func resignFirstResponder() -> Bool {
         textField.resignFirstResponder()
         return super.resignFirstResponder()
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         textField.frame = CGRect(x: cornersOffset, y: 15, width: bounds.width - cornersOffset * 2, height: 32)
         underlineView.frame = CGRect(x: 0, y: bounds.size.height - InputComponent.underlineHeight - 1, width: bounds.size.width, height: InputComponent.underlineHeight)
@@ -152,7 +152,7 @@ class InputComponent: UIView{
         endEditing(true)
     }
     
-    func updateText(_ text: String){
+    public func updateText(_ text: String){
         textField.text = text
         textUpdatedEvent.send(text)
     }
@@ -172,7 +172,7 @@ class InputComponent: UIView{
         textField.inputAccessoryView = toolbar
     }
     
-    func update(data: InputComponentData){
+    public func update(data: InputComponentData){
         resolve(data.text, resolver: updateText(_:))
         resolve(data.placeholder) { self.placeholder = $0 }
         resolve(data.hasError, resolver: setHasError(_:))
@@ -194,12 +194,12 @@ class InputComponent: UIView{
 }
 
 extension InputComponent: UITextFieldDelegate{
-    func textFieldShouldClear(_ textField: UITextField) -> Bool{
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool{
         text.value = ""
         return true
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         finishEditing()
         return true
     }
@@ -257,12 +257,12 @@ extension InputComponent: UITextFieldDelegate{
     }
 }
 
-class TextfieldComponent: InputComponent, FastComponent{
-    var event: SafeSignal<String> { text.dropFirst(1) }
+public class TextfieldComponent: InputComponent, FastComponent{
+    public var event: SafeSignal<String> { text.dropFirst(1) }
 }
 
 //MARK: - DateInputComponent
-class DateInputData: InputComponentData, FastDataCreatable{
+public class DateInputData: InputComponentData, FastDataCreatable{
     var minimumDate: Date?
     var currentDate: Date?
     var maximumDate: Date?
@@ -271,7 +271,8 @@ class DateInputData: InputComponentData, FastDataCreatable{
         currentDate = data
         super.init()
     }
-    init(minimumDate: Date? = nil, currentDate: Date? = nil, maximumDate: Date? = nil, placeholder: String? = nil, hasError: Bool? = nil, isEnabled: Bool? = nil, isVisible: Bool? = nil, isFirstRepsonder: Bool? = nil) {
+    
+    public init(minimumDate: Date? = nil, currentDate: Date? = nil, maximumDate: Date? = nil, placeholder: String? = nil, hasError: Bool? = nil, isEnabled: Bool? = nil, isVisible: Bool? = nil, isFirstRepsonder: Bool? = nil) {
         self.minimumDate = minimumDate
         self.currentDate = currentDate
         self.maximumDate = maximumDate
@@ -286,32 +287,32 @@ class DateInputData: InputComponentData, FastDataCreatable{
     }
 }
 
-class DateInputComponent: InputComponent, FastComponent{
-    typealias Data = DateInputData
-    let event = SafeReplayOneSubject<Date>()
-    let datePicker = UIDatePicker(frame: .zero)
+public class DateInputComponent: InputComponent, FastComponent{
+
+    public let event = SafeReplayOneSubject<Date>()
+    public let datePicker = UIDatePicker(frame: .zero)
     
-    var minimumDate: Date? {
+    public var minimumDate: Date? {
         didSet { datePicker.minimumDate = minimumDate }
     }
     
-    var currentDate: Date?{
+    public var currentDate: Date?{
         didSet{ if let d = currentDate { datePicker.date = d } }
     }
     
-    var maximumDate: Date? {
+    public var maximumDate: Date? {
         didSet { datePicker.maximumDate = maximumDate }
     }
     
-    var dateFormat = "MM/dd/yyyy"
+    public var dateFormat = "MM/dd/yyyy"
     
-    var pickerMode: UIDatePicker.Mode = .time
+    public var pickerMode: UIDatePicker.Mode = .time
     
-    func setLocale(_ locale: String){
+    public func setLocale(_ locale: String){
         datePicker.locale = Locale(identifier: locale)
     }
     
-    func updateText(date: Date){
+    public func updateText(date: Date){
         updateText(date.string(withFormat: dateFormat))
     }
     
@@ -326,7 +327,7 @@ class DateInputComponent: InputComponent, FastComponent{
         addToolbar()
     }
     
-    func update(data: DateInputData) {
+    public func update(data: DateInputData) {
         resolve(data.minimumDate) { self.minimumDate = $0 }
         resolve(data.currentDate) { self.currentDate = $0; self.updateText(date: $0) }
         resolve(data.maximumDate) { self.maximumDate = $0 }
@@ -339,7 +340,7 @@ class DateInputComponent: InputComponent, FastComponent{
 }
 
 //MARK: - OptionPickerComponent
-class OptionPickerData: InputComponentData, FastDataCreatable{
+public class OptionPickerData: InputComponentData, FastDataCreatable{
     var selectedOption: Int?
     var options: [String]?
     
@@ -348,7 +349,7 @@ class OptionPickerData: InputComponentData, FastDataCreatable{
         super.init()
     }
     
-    init(selectedOption: Int? = nil, options: [String]? = nil, placeholder: String? = nil, hasError: Bool? = nil, isEnabled: Bool? = nil, isVisible: Bool? = nil, isFirstRepsonder: Bool? = nil) {
+    public init(selectedOption: Int? = nil, options: [String]? = nil, placeholder: String? = nil, hasError: Bool? = nil, isEnabled: Bool? = nil, isVisible: Bool? = nil, isFirstRepsonder: Bool? = nil) {
         self.selectedOption = selectedOption
         self.options = options
         super.init(placeholder: placeholder, hasError: hasError, isEnabled: isEnabled, isVisible: isVisible, isFirstRepsonder: isFirstRepsonder)
@@ -362,16 +363,12 @@ class OptionPickerData: InputComponentData, FastDataCreatable{
     }
 }
 
-class OptionPickerComponent: InputComponent, FastComponent{
-    typealias Data = OptionPickerData
+public class OptionPickerComponent: InputComponent, FastComponent{
+    public let event = SafeReplayOneSubject<Int>()
     
-    let event = SafeReplayOneSubject<Int>()
+    public let optionsPicker = UIPickerView(frame: CGRect.zero)
     
-    let optionsPicker = UIPickerView(frame: CGRect.zero)
-    
-//    override var skipTextTimes: Int{ 1 }
-    
-    var pickerOptions: [String] = []{
+    public var pickerOptions: [String] = []{
         didSet{ updateOptions() }
     }
     
@@ -384,7 +381,7 @@ class OptionPickerComponent: InputComponent, FastComponent{
         addToolbar()
     }
     
-    func setSelectedIndex(_ index: Int){
+    public func setSelectedIndex(_ index: Int){
         guard 0 <= index && index < pickerOptions.count else {
             print("OptionPickerComponent: incorrect index \(index) with \(pickerOptions.count) elements: \(pickerOptions)")
             return
@@ -393,7 +390,7 @@ class OptionPickerComponent: InputComponent, FastComponent{
         optionsPicker.selectRow(index, inComponent: 0, animated: false)
     }
     
-    func update(data: OptionPickerData) {
+    public func update(data: OptionPickerData) {
         resolve(data.options) {
             self.pickerOptions = $0
             self.setSelectedIndex(0)
@@ -412,11 +409,6 @@ class OptionPickerComponent: InputComponent, FastComponent{
         event.map { values.safeAt(index: $0) }.ignoreNils().bind(to: text).dispose(in: optionsBag)
     }
 }
-
-
-
-
-
 
 
 fileprivate struct Constants {

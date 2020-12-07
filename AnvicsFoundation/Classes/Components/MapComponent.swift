@@ -63,59 +63,59 @@ class MapViewComponent: UIView, FastComponent{
     }
 }
 
-protocol MapComponentAnnotation: MKAnnotation, Equatable { }
-
-class MapComponentConnector<Annotation: MapComponentAnnotation, View: MKAnnotationView, Action>: NSObject, FastListConnectorType, MKMapViewDelegate{
-    typealias AnnotationProducer = (Annotation) -> MKAnnotationView?
-    var reducer: Subject<Action, Never>?
-    
-    var items: [Annotation] = []
-    
-    let mapView: MapViewComponent
-    var cellPressed: CellPressedListener?
-    var shouldIgnoreDuplicates: Bool { true }
-    
-    init(_ mapView: MapViewComponent){
-        self.mapView = mapView
-        super.init()
-        if #available(iOS 11.0, *){
-            mapView.map.register(View.self, forAnnotationViewWithReuseIdentifier: "\(View.self)")
-        }
-        mapView.map.delegate = self
-    }
-
-    func update(with: [Annotation]) {
-        var removeAnnotations: [Annotation] = []
-        for a in items{
-            if !with.contains(a) { removeAnnotations.append(a) }
-        }
-        var appendAnnotations: [Annotation] = []
-        for a in with{
-            if !items.contains(a) { appendAnnotations.append(a) }
-        }
-        items = with
-        mapView.map.removeAnnotations(removeAnnotations)
-        mapView.map.addAnnotations(appendAnnotations)
-        let cords = with.map { $0.coordinate }
-        mapView.map.zoom(to: cords, meter: 100, edgePadding: UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50), animated: true)        
-    }
-        
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? Annotation else { return nil }
-        
-        var view: MKAnnotationView
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: "\(View.self)") as? View {
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        } else {
-            view = View(annotation: annotation, reuseIdentifier: "\(View.self)")
-            view.annotation = annotation
-        }
-        return view
-    }
-    
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView){
-        guard let a = view.annotation as? Annotation, let i = items.firstIndex(of: a) else { return }
-        cellPressed?(i)
-    }
-}
+//protocol MapComponentAnnotation: MKAnnotation, Equatable { }
+//
+//class MapComponentConnector<Annotation: MapComponentAnnotation, View: MKAnnotationView, Action>: NSObject, FastListConnectorType, MKMapViewDelegate{
+//    typealias AnnotationProducer = (Annotation) -> MKAnnotationView?
+//    var reducer: Subject<Action, Never>?
+//
+//    var items: [Annotation] = []
+//
+//    let mapView: MapViewComponent
+//    var cellPressed: CellPressedListener?
+//    var shouldIgnoreDuplicates: Bool { true }
+//
+//    init(_ mapView: MapViewComponent){
+//        self.mapView = mapView
+//        super.init()
+//        if #available(iOS 11.0, *){
+//            mapView.map.register(View.self, forAnnotationViewWithReuseIdentifier: "\(View.self)")
+//        }
+//        mapView.map.delegate = self
+//    }
+//
+//    func update(with: [Annotation]) {
+//        var removeAnnotations: [Annotation] = []
+//        for a in items{
+//            if !with.contains(a) { removeAnnotations.append(a) }
+//        }
+//        var appendAnnotations: [Annotation] = []
+//        for a in with{
+//            if !items.contains(a) { appendAnnotations.append(a) }
+//        }
+//        items = with
+//        mapView.map.removeAnnotations(removeAnnotations)
+//        mapView.map.addAnnotations(appendAnnotations)
+//        let cords = with.map { $0.coordinate }
+//        mapView.map.zoom(to: cords, meter: 100, edgePadding: UIEdgeInsets(top: 50, left: 50, bottom: 50, right: 50), animated: true)
+//    }
+//
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        guard let annotation = annotation as? Annotation else { return nil }
+//
+//        var view: MKAnnotationView
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: "\(View.self)") as? View {
+//            dequeuedView.annotation = annotation
+//            view = dequeuedView
+//        } else {
+//            view = View(annotation: annotation, reuseIdentifier: "\(View.self)")
+//            view.annotation = annotation
+//        }
+//        return view
+//    }
+//
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView){
+//        guard let a = view.annotation as? Annotation, let i = items.firstIndex(of: a) else { return }
+//        cellPressed?(i)
+//    }
+//}
